@@ -11,14 +11,27 @@ app.set('views', __dirname + '/views');
 // GET '/' page
 app.get('/', function(req, res) {
     res.render('index', {
-      title: 'Craft Faith'
+      page: 'Home',
+      siteTitle: 'Craft Faith',
+      pageDesc: 'Share your God given talents to inspire others.'
     });
 });
 
 // GET '/about' page
 app.get('/about', function(req, res) {
   res.render('about', {
-    title: 'Craft Faith'
+    page: 'About',
+    siteTitle: 'Craft Faith',
+    pageDesc: 'Craft Faith is a social sharing site for Christians to share their creative art and inspire others.'
+  });
+});
+
+//GET '/contact' page
+app.get('/contact', function(req, res) {
+  res.render('contact', {
+    page: 'Contact',
+    siteTitle: 'Craft Faith',
+    pageDesc: 'Contact Craft Faith. Send us an email or connect with us on social media.'
   });
 });
 

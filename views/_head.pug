@@ -1,9 +1,19 @@
 doctype
 html(lang='en')
   head
-    title #{title}
+    title #{page} | #{siteTitle}
+    meta(name='description', content='' + pageDesc)
     link(rel='stylesheet', href='/css/normalize.css')
     link(rel='stylesheet', href='/css/skeleton.css')
     link(rel='stylesheet', href='/css/style.css')
   body
+  .container
+    nav.nav
+      ul
+        li
+          a(href='/') Home
+        li
+          a(href='/about') About
+        li
+          a(href='/contact') Contact
   block content
