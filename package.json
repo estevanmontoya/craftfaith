@@ -1,15 +1,12 @@
 {
   "name": "craftfaith",
   "version": "1.0.0",
-  "description": "",
+  "description": "Share your God given talents to inspire others.",
+  "repository": "https://github.com/estevanmontoya/craftfaith.git",
   "main": "app.js",
   "dependencies": {
     "express": "^4.15.0",
     "pug": "^2.0.0-beta11"
   },
   "author": "Estevan Montoya",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/estevanmontoya/craftfaith/issues"
-  }
 }
