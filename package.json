@@ -1,0 +1,14 @@
+{
+  "name": "craftfaith",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.15.0"
+  },
+  "author": "Estevan Montoya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/estevanmontoya/craftfaith/issues"
+  }
+}
