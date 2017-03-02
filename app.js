@@ -1,8 +1,12 @@
 var express = require('express');
 var app = express();
+var morgan = require('morgan')
 
 // serve static files from /public
 app.use(express.static(__dirname + '/public'));
+
+// set up logging middleware
+app.use(morgan('combined'))
 
 // view engine setup
 app.set('view engine', 'pug');

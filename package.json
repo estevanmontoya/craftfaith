@@ -6,7 +6,11 @@
   "private": false,
   "dependencies": {
     "express": "^4.13.4",
+    "morgan": "^1.8.1",
     "pug": "^2.0.0-beta2"
+  },
+  "scripts": {
+    "start": "node app.js"
   },
   "license": "MIT"
 }
