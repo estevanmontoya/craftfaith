@@ -1,14 +1,49 @@
 /* Imports */
-@import url('https://fonts.googleapis.com/css?family=Cardo');
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond');
 
 body {
-  font-family: 'Cardo', serif;
+  font-family: 'Cormorant Garamond', serif;
+  background-color: #f2f2f2;
 }
 
-.nav li{
-  display: inline;
-  margin-right:20px;
+.topMenu {
+  box-shadow: 0 0 3px rgba(0,0,0,.5);
+  background-color: white;
 }
-.nav li a {
+
+.homeLink {
+  font-size: 30px;
+  color:black;
+}
+
+.homeLink:hover {
+	color:#1d1d1d;
   text-decoration: none;
+}
+
+.tagline {
+  font-style: italic;
+}
+
+.menu {border-bottom:2px solid rgba(0,0,0,.0);}
+.menu a {
+  text-transform: uppercase;
+  color:black;
+  border-bottom:2px solid rgba(0,0,0,.0);
+}
+
+.menu:hover {
+  border-bottom:2px solid black;
+}
+
+.menuSearch {
+  font-family: 'Cormorant Garamond', serif;
+  font-size:.9em;
+  letter-spacing: 2px;
+  font-weight:500;  
+  border-radius: 0px;
+  border:none;
+  background-color:black;
+  color:lightgray;
+  text-transform: uppercase;
 }

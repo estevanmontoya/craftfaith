@@ -4,16 +4,20 @@ html(lang='en')
     title #{page} | #{siteTitle}
     meta(name='description', content='' + pageDesc)
     link(rel='stylesheet', href='/css/normalize.css')
-    link(rel='stylesheet', href='/css/skeleton.css')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css')
     link(rel='stylesheet', href='/css/style.css')
   body
-  .container
-    nav.nav
-      ul
-        li
-          a(href='/') Home
-        li
-          a(href='/about') About
-        li
-          a(href='/contact') Contact
+    nav.nav.navbar-toggleable-md.topMenu
+      div.flex-column.flex-sm-row
+        a(href='/').navbar-brand.homeLink CraftFAITH
+        span.navbar-text.tagline Inspire others with your God given talents and abilities.
+      ul.nav.justify-content-end
+        li.nav-item.menu
+          a(href='/').nav-link Home
+        li.nav-item.menu
+          a(href='/about').nav-link About
+        li.nav-item.menu
+          a(href='/contact').nav-link Contact
+      form.form-inline
+          input.form-control.mr-sm-2.menuSearch(type='text', placeholder='Find Inspiration')
   block content
