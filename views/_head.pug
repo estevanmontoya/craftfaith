@@ -7,11 +7,10 @@ html(lang='en')
     link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css')
     link(rel='stylesheet', href='/css/style.css')
   body
-    nav.nav.navbar-toggleable-md.topMenu
-      div.flex-column.flex-sm-row
-        a(href='/').navbar-brand.homeLink CraftFAITH
-        span.navbar-text.tagline Inspire others with your God given talents and abilities.
-      ul.nav.justify-content-end
+    nav.nav.topMenu
+      a(href='/').navbar-brand.homeLink CraftFAITH
+      span.navbar-text.tagline Inspire others with your God given talents and abilities.
+      ul.nav
         li.nav-item.menu
           a(href='/').nav-link Home
         li.nav-item.menu
@@ -19,5 +18,5 @@ html(lang='en')
         li.nav-item.menu
           a(href='/contact').nav-link Contact
       form.form-inline
-          input.form-control.mr-sm-2.menuSearch(type='text', placeholder='Find Inspiration')
+        input.form-control.mr-sm-2.menuSearch(type='text', placeholder='Find Inspiration')
   block content

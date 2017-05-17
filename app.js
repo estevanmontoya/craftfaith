@@ -6,7 +6,7 @@ var morgan = require('morgan')
 app.use(express.static(__dirname + '/public'));
 
 // set up logging middleware
-app.use(morgan('combined'))
+app.use(morgan('combined'));
 
 // view engine setup
 app.set('view engine', 'pug');
